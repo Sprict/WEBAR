@@ -5,13 +5,6 @@
 <!-- AR.js ライブラリの読み込み -->
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
 
-<script>
-    function get() {
-        var maker = document.getElementById("yjimage");
-        var pos = maker.getAttribute("")
-    }
-</script>
-
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
         <a-assets>
@@ -34,7 +27,7 @@
         </a-asset>
 
         <a-marker type='pattern' url='./pattern-yjimage.patt'>
-            <a-entity geometry="primitive: box" material="src: #my-video"></a-entity>
+            <a-entity geometry="primitive: box" position="0 .5 0" material="src: #my-video"></a-entity>
             <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#f00">
                 <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
                 </a-animation>
