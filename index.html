@@ -4,7 +4,6 @@
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <!-- AR.js ライブラリの読み込み -->
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
-<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
@@ -24,7 +23,7 @@
             <a-text value="Merry X'mas!!!" position="0 1.3 0" align="center"></a-text>
         </a-marker>
         <a-asset>
-            <video id="my-video" src="rewa.mp4" autoplay loop="true"></video>
+            <video id="my-video" src="rewa.mp4" autoplay loop="true">
         </a-asset>
 
         <a-marker type='pattern' url='./pattern-yjimage.patt'>
