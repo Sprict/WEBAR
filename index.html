@@ -16,7 +16,7 @@
                 console.log('markerFound', markerId);
 
                 // アニメーションの開始
-                document.querySelector('#box').isPlaying = true;
+                document.querySelector('#box').play();
             });
 
             // マーカーを見失ったイベントの登録
@@ -25,7 +25,7 @@
                 console.log('markerLost', markerId);
 
                 // アニメーションの停止
-                document.querySelector('#box').isPlaying = false;
+                document.querySelector('#box').pause();
             });
         }
     });
