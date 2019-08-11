@@ -12,10 +12,11 @@
             // マーカーを検出したイベントの登録
             marker.addEventListener('markerFound', function () {
                 var markerId = marker.id;
+                console.log("hello");
                 console.log('markerFound', markerId);
 
                 // アニメーションの開始
-                document.querySelector('#box').isPlaying = ture;
+                document.querySelector('#box').isPlaying = true;
             });
 
             // マーカーを見失ったイベントの登録
