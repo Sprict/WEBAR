@@ -16,7 +16,7 @@
                 console.log('markerFound', markerId);
 
                 // アニメーションの開始
-                document.querySelector('#box').play();
+                document.querySelector('#my-video').play();
             });
 
             // マーカーを見失ったイベントの登録
@@ -25,7 +25,7 @@
                 console.log('markerLost', markerId);
 
                 // アニメーションの停止
-                document.querySelector('#box').pause();
+                document.querySelector('#my-video').pause();
             });
         }
     });
